@@ -16,6 +16,7 @@ ul {
     padding: 0;
     background-color: #333333;
     display: flex;
+    flex-direction: row;
 }
 
 ul li a{
@@ -40,8 +41,28 @@ ul li a:hover {
     background-color: #111111;
 }
 
+main{
+      display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 20px;
+}
+footer{
+     text-align: center;
+    padding: 20px;
+    background-color: #333333;
+    color: white;
+}
+
 @media screen and(max-width: 768px){
-    ul {flex-direction: column;}
+    ul {
+        flex-direction: column;
+    }
+     
+    main {
+        flex-direction: column;
+    }
+
 
     
 }
